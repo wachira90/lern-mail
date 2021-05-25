@@ -58,6 +58,7 @@ debug_peer_level=3
 
 [root@hostname ~]# postconf -n
 
+## Postfix service command 
 
 systemctl status postfix
 
