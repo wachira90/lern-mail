@@ -1,5 +1,7 @@
 # postsuper command
 
+Using Postfix postsuper command
+
 postsuper is Postfix superintendent. This is command does maintenance jobs on the Postfix queue. Use of the postsuper command is restricted to the superuser of the Mail server. By default, postsuper performs the operations requested with the -s, and -p command-line options on all Postfix queue directories – this includes the incoming, active and deferred directories with mail files and the bounce, defer, trace and flush directories with log files.
 
 
