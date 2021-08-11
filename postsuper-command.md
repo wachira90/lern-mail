@@ -1,17 +1,4 @@
-# mail command
-
-To check current active  mail queue, use the command:
-```
-$ mailq
-```
-
-Get email accounts with high Postfix queues
-```
-$ mailq | grep ^[A-F0-9] | cut -c 42-80 | sort | uniq -c | sort -n | tail
-```
-Using Postfix postsuper command
-
-postsuper command
+# postsuper command
 
 postsuper is Postfix superintendent. This is command does maintenance jobs on the Postfix queue. Use of the postsuper command is restricted to the superuser of the Mail server. By default, postsuper performs the operations requested with the -s, and -p command-line options on all Postfix queue directories – this includes the incoming, active and deferred directories with mail files and the bounce, defer, trace and flush directories with log files.
 
