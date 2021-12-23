@@ -27,7 +27,7 @@ So this time the relay server allowed us to send mail from the client in `192.16
 
 ### Conclusion
 
-In this tutorial we learned to allow or blacklist specified range of IP address or networks to allow or blacklist from using our postfix relay server. You can modify mynetworks value or use mynetworks_style to define your network. We may also choose to defer the mails instead of reject so that the mail goes to queue and will be sent later.
+In this tutorial we learned to allow or blacklist specified range of IP address or networks to allow or blacklist from using our postfix relay server. You can modify `mynetworks` value or use `mynetworks_style` to define your network. We may also choose to defer the mails instead of reject so that the mail goes to queue and will be sent later.
 
 Lastly I hope the steps from the article to restrict access for postfix smtp relay server for certain IP address or network on Linux was helpful. So, let me know your suggestions and feedback using the comment section.
 
