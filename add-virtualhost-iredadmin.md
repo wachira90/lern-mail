@@ -11,7 +11,8 @@ add new => mail.examplexxx.com
 mail.examplexxx.com
 ````
 
-## add host in program iredadmin
+## add Domain in program iredadmin
+### https://computingforgeeks.com/add-domain-and-user-account-on-iredmail-mail-server/
 ````
 mail.examplexxx.com
 ````
