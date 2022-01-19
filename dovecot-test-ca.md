@@ -28,11 +28,11 @@ Verify return code: 19 (self signed certificate in certificate chain)
 
 ## Testing CA On Debian
 ````
-openssl s_client -CApath /etc/ssl/certs -connect mail.sirivatana.co.th:pop3s
+openssl s_client -CApath /etc/ssl/certs -connect mail.example.com:pop3s
 ````
 ## Testing CA On RHEL
 ````
-openssl s_client -CAfile /etc/pki/tls/cert.pem -connect mail.sirivatana.co.th:pop3s
+openssl s_client -CAfile /etc/pki/tls/cert.pem -connect mail.example.com:pop3s
 ````
 ## Testing CA Success (this ok)
 ````
