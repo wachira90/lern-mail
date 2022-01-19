@@ -21,7 +21,7 @@ verbose_ssl = yes
 openssl s_client -servername mail.example.com -connect mail.example.com:pop3s
 ````
 
-## error sms  (not ok)
+## Error sms  (not ok)
 ````
 Verify return code: 19 (self signed certificate in certificate chain)
 ````
