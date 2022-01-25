@@ -121,9 +121,9 @@ It’s impossible for an IP address to be listed in Spamhaus whitelist and black
 
 Here’s a screenshot of my Postfix spam filters.
 
-````
-IMG
-````
+![img logo](/img/6-003.JPG "img")
+
+
 You might be wondering why there is no comma in the first two configuration snippets. Well, you can separate values in Postfix configuration file with space, carriage return or comma. If you add comma to one parameter (`smptd_recipient_restrictions` as in the above screenshot), then make sure all remaining values are separated with comma.
 
 
@@ -201,9 +201,8 @@ MAILTO="your-email-address"
 
 You should pay attention to the message reject detail section, where you can see for what reason those emails are rejected and if there’s any false positives. Greylisting rejections are safe to ignore.
 
-````
-IMG
-````
+![img logo](/img/6-004.JPG "img")
+
 If the MAILTO variable has already been set but you want Postfix log summary sent to a different email address, you can put the following line in your Cron job.
 
 ````
