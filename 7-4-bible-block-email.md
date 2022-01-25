@@ -1,4 +1,4 @@
-# Reject Email If MAIL FROM Domain Has Neither MX Record Nor A Record
+# 4 Reject Email If MAIL FROM Domain Has Neither MX Record Nor A Record
 
 The `MAIL FROM` address is also known as `envelope from` address. Some spammers use a non-existent domain in the `MAIL FROM` address. If a domain name has no MX record, Postfix will find the A record of the main domain and send email to that host. If the sender domain has neither MX record nor A record, Postfix can’t send email to that domain. So why not reject emails that you can’t reply to?
 
