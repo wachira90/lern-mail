@@ -24,6 +24,10 @@ On Debian and Ubuntu, it listens on TCP port 10023 on localhost (both IPv4 and I
 ````
 sudo netstat -lnpt | grep postgrey
 ````
+
+![img logo](/img/5-001.JPG "img")
+
+
 On CentOS/RHEL, Postgrey listens on a Unix socket (`/var/spool/postfix/postgrey/socket`).
 
 Next, we need to edit Postfix main configuration file to make it use the greylisting policy server.
@@ -34,6 +38,9 @@ Add the following line in smtpd_recipient_restrictionsif you are using Debian or
 ````
 check_policy_service inet:127.0.0.1:10023
 ````
+
+![img logo](/img/5-002.JPG "img")
+
 If you use CentOS/RHEL, you need to add the following line instead.
 ````
 check_policy_service  unix:/var/spool/postfix/postgrey/socket
