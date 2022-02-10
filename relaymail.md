@@ -24,10 +24,13 @@ myhostname = fqdn.example.com
 ## file /etc/postfix/sasl_passwd
 ````
 [mail.isp.example] username@example.com:password
+````
+
+## run command
+````
 sudo postmap /etc/postfix/sasl_passwd
 ````
- 
- 
+
  ## Secure your Password and Hash DB files
 ````
  sudo chown root:root /etc/postfix/sasl_passwd /etc/postfix/sasl_passwd.db
